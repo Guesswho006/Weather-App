@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="src/output.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 flex items-center justify-center h-screen">
+    <div id="WeatherApp" class="bg-white p-6 rounded-lg shadow-lg w-80">
+        <h1 class="text-2xl font-bold mb-4 text-center">Weather App</h1>
+        <input id="city" type="text" placeholder="Enter City" class="border border-gray-300 rounded p-2 w-full">
+        <button onclick="getWeather()" class="mt-3 bg-blue-500 text-white rounded p-2 w-full">Get Weather</button>
+        <div id="loading" class="hidden mt-4 text-center text-lg">Loading...</div>
+        <div id="Weather" class="mt-4"></div>
+        <div id="error" class="mt-4 text-red-500"></div>
+        <div id="history" class="mt-4 border-t pt-4 text-gray-600">
+            <h2 class="text-lg font-bold">Search History</h2>
+            <ul id="historyList"></ul>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
