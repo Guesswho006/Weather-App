@@ -18,6 +18,7 @@ async function getWeather() {
         const response = await fetch(url);
         const data = await response.json();
 
+
         if (data.cod !== 200) {
             console.error("API Error:", data);
             document.getElementById('error').innerHTML = 'City not found. Please try again.';
